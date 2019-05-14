@@ -1,5 +1,5 @@
 <?php
-
+//Controlador para Ingresar campeonato
 include ("../clases/campeonato.php");
 include ("./db.php");
 include ("./constantes.php");

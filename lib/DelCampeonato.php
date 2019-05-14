@@ -1,4 +1,5 @@
 <?php
+//Controlador para la Eliminacion de un campeonato.
 include ("./db.php");
 include ("./constantes.php");
 include ("../clases/campeonato.php");
@@ -12,4 +13,7 @@ if(isset($_POST[""]))
 {
     $variable="";
     
+    
+    $oCamp = new campeonato();
+    //$oCamp->exec;
 }
