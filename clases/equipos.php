@@ -49,10 +49,8 @@ class Equipos{
         }
         
         $PDOst=$dblink->prepare('insert into equipo
-                                (idequipo,codigo,nombre) values(?,?,?)
-                                 where idequipo=?');
-        echo $this->idequipo;
-        $PDOst->execute(array($this->idequipo,$this->codigo,$this->nombre));
+                                (codigo,nombre) values(?,?)');
+        $PDOst->execute(array($this->codigo,$this->nombre));
     }
     
     function EliminaDatos(){
